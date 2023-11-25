@@ -1,7 +1,21 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
+    var feedbacks = ViewData["feedbacks"] as IEnumerable<HealHub.Models.Feedback>;
 }
-<div class="text-center" style="background-color: #f8f9fa; padding: 20px;">
-    <h1 class="display-4" style="color: #007bff;">Welcome</h1>
-    <p style="font-size: 18px;">Learn about <a href="https://docs.microsoft.com/aspnet/core" style="color: #28a745; text-decoration: none;">building Web apps with ASP.NET Core</a>.</p>
+
+<div class="text-center">
+    <div style="background-color:#022e1f; border-radius:10px; width:650px; height:700px; color:white; align-self:center;">
+        <h1 class="display-4">Bem-vindo!</h1>
+    
+        <p>Projeto feito em java no formato full MVC com o intúito de criar uma plataforma que visa facilitar a entrada da população em hospitais e pronto-socorros de forma mais rápida e organizada, também ajudando com prognósticos com base na ficha de entrada dos pacientes</p>
+    </div>
 </div>
+
+<style>
+    .product-info {
+        background-color: #192233; /* Fundo branco */
+        padding: 15px; /* Espaçamento interno para o texto */
+        border-radius: 10px; /* Borda arredondada */
+        width: 150px;
+    }
+ </style>

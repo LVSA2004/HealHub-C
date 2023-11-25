@@ -3,52 +3,54 @@
 @{
     ViewData["Title"] = "Delete";
 }
+<div style="background-color:white; width:700px;">
+
 
 <h1>Delete</h1>
 
-<h3>Are you sure you want to delete this?</h3>
+<h3>Certeza que deseja deletar o formulario ?</h3>
 <div>
-    <h4>Form</h4>
+    <h4>Formulario</h4>
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.userId)
+           ID
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.userId)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.age)
+            Idade
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.age)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.weight)
+            Peso
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.weight)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.height)
+           Altura
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.height)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.symptoms)
+            Sintomas
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.symptoms)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.duration)
+            Suração
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.duration)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.diseaseHistory)
+           Historico de doenças
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.diseaseHistory)
@@ -57,7 +59,9 @@
     
     <form asp-action="Delete">
         <input type="hidden" asp-for="id" />
-        <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-action="Index" class="btn btn-secondary btn-sm">Voltar a Listagem</a>
+        <input type="submit" value="Deletar" class="btn btn-danger" /> |
+            <a asp-action="Index" class="btn btn-primary">Voltar</a>
     </form>
+
+</div>
 </div>

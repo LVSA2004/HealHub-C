@@ -4,12 +4,12 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
+<h1>Criar</h1>
 
 <h4>Feedback</h4>
 <hr />
 <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-4" style="background-color:white; width:700px;">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
@@ -35,7 +35,7 @@
             </div>
             <div class="form-group form-check">
                 <label class="form-check-label">
-                    <input class="form-check-input" asp-for="Authorized" /> @Html.DisplayNameFor(model => model.Authorized)
+                    <input class="form-check-input" asp-for="Authorized" /> Autorizado
                 </label>
             </div>
             <div class="form-group">
@@ -43,15 +43,13 @@
                 <select asp-for="PrognosisId" class ="form-control" asp-items="ViewBag.PrognosisId"></select>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Criar" class="btn btn-primary" />
+                <a class="btn btn-primary" asp-action="Index">Voltar</a>
             </div>
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index" class="btn btn-secondary btn-sm">Voltar a Listagem</a>
-</div>
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

@@ -3,35 +3,36 @@
 @{
     ViewData["Title"] = "Index";
 }
+<div style="background-color:white; padding:10px; width:1000px;" class="rounded-3">
 
-<h1>Index</h1>
+<h1>Formulario</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+        <a asp-action="Create" class="btn btn-dark">Adicionar Novo Formulario</a>
 </p>
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.userId)
+                ID
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.age)
+                Idade
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.weight)
+               Peso
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.height)
+               ALtura
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.symptoms)
+                SIntomas
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.duration)
+                Duração
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.diseaseHistory)
+               Historico de doenças
             </th>
             <th></th>
         </tr>
@@ -61,11 +62,13 @@
                 @Html.DisplayFor(modelItem => item.diseaseHistory)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.id">Delete</a>
+                <a asp-action="Edit" class="btn btn-dark" asp-route-id="@item.id">Editar</a> |
+                <a asp-action="Details" class="btn btn-dark" asp-route-id="@item.id">Detalhes</a> |
+                <a asp-action="Delete" class="btn btn-dark" asp-route-id="@item.id">Deletar</a>
             </td>
         </tr>
 }
     </tbody>
 </table>
+
+</div>

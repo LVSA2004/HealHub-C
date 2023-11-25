@@ -3,11 +3,12 @@
 @{
     ViewData["Title"] = "Index";
 }
+<div style="background-color:white; padding:10px; width:1200px;" class="rounded-3">
 
-<h1>Index</h1>
+<h1>Feedback</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+        <a asp-action="Create" class="btn btn-dark">Adicionar Novo Feedback</a>
 </p>
 <table class="table">
     <thead>
@@ -55,11 +56,12 @@
                 @Html.DisplayFor(modelItem => item.prognosis.Id)
             </td>
             <td>
-                    <a asp-action="Edit" asp-route-id="@item.FeedbackId" class="btn btn-secondary btn-sm">Editar</a> |
-                    <a asp-action="Details" asp-route-id="@item.FeedbackId" class="btn btn-secondary btn-sm">Detalhes</a> |
-                    <a asp-action="Delete" asp-route-id="@item.FeedbackId" class="btn btn-secondary btn-sm">Deletar</a>
+            <a asp-action="Edit" class="btn btn-dark" asp-route-id="@item.FeedbackId">Editar</a> |
+            <a asp-action="Details" class="btn btn-dark" asp-route-id="@item.FeedbackId">Detalhes</a> |
+            <a asp-action="Delete" class="btn btn-dark" asp-route-id="@item.FeedbackId">Deletar</a>
             </td>
         </tr>
 }
     </tbody>
 </table>
+</div>

@@ -4,50 +4,50 @@
     ViewData["Title"] = "Details";
 }
 
-<h1>Details</h1>
+<h1>Detalhes</h1>
 
 <div>
-    <h4>Form</h4>
+    <h4>Formulario</h4>
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.userId)
+            Id
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.userId)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.age)
+           IDade
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.age)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.weight)
+            Peso
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.weight)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.height)
+            Altura
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.height)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.symptoms)
+           Sintomas
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.symptoms)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.duration)
+            Duração
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.duration)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.diseaseHistory)
+            Historico de doenças
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.diseaseHistory)
@@ -55,6 +55,6 @@
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Edit" asp-route-id="@Model?.id">Editar</a> |
+    <a asp-action="Index">Voltar</a>
 </div>

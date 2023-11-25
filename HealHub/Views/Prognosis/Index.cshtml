@@ -4,19 +4,21 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<div style="background-color:white; padding:10px; width:1000px;" class="rounded-3">
+
+<h1>Prognostico</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+        <a asp-action="Create" class="btn btn-dark">Adicionar Novo Prognostico</a>
 </p>
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.formId)
+                Id
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.description)
+                Descricao
             </th>
             <th></th>
         </tr>
@@ -31,11 +33,12 @@
                 @Html.DisplayFor(modelItem => item.description)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                        <a asp-action="Edit" class="btn btn-dark" asp-route-id="@item.Id">Editar</a> |
+                        <a asp-action="Details" class="btn btn-dark" asp-route-id="@item.Id">Detalhes</a> |
+                        <a asp-action="Delete" class="btn btn-dark" asp-route-id="@item.Id">Deletar</a>
             </td>
         </tr>
 }
     </tbody>
 </table>
+</div>

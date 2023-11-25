@@ -4,33 +4,35 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
+<div class="col-md-4"
+     style="background-color:white; width:700px;">
 
-<h4>Prognosis</h4>
+<h1>Criar</h1>
+
+<h4>Prognostico</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="formId" class="control-label"></label>
+                <label asp-for="formId" class="control-label">ID Formulario</label>
                 <input asp-for="formId" class="form-control" />
                 <span asp-validation-for="formId" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="description" class="control-label"></label>
+                <label asp-for="description" class="control-label">Descrição</label>
                 <input asp-for="description" class="form-control" />
                 <span asp-validation-for="description" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Criar" class="btn btn-primary" />
+                <a class="btn btn-primary" asp-action="Index">Voltar</a>
             </div>
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index" class="btn btn-secondary btn-sm">Voltar a Listagem</a>
 </div>
 
 @section Scripts {
